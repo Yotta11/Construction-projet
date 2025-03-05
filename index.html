@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TR Construction</title>
+    <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        '': '#F35034',
+                        'orange2': '#E63E21',
+                        'blanct': '#FFFFFF',
+                        'page': '#1B1B1B',
+                        'noir': '#262626',
+                        'noirb': ' #161616',
+                        'noirt': '#3F3E3E',
+                        'gris': '#C0C0C0',
+                        'blanc': '#F5F5F5 ',
+                        'oran' : '#FFF3E0'
+                    },
+                    fontFamily: {
+                        'inter': ["Inter", 'serif'],
+                        'ita': ["Italianno", 'serif']
+                    }
+
+                }
+
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gradient-to-tl from-white from-40% via-oran via-80%   to-white 70%  m-4 md:m-8 lg:m-16 ">
+    <header class="flex justify-between md:ml-6 lg:ml-8">
+        <div class="flex flex-col w-32 items-center -ml-8 md:-ml-10 lg:-ml-12 lg:-mt-10 md:-mt-6 ">
+            <img src="assets/img/logo.png" class="w-12 h-12 lg:w-22 lg:h-22  md:w-20 md:h-20 object-cover">
+            <h1 class="text-2xl md:text-3xl lg:text-4xl  -mt-6  font-[500] font-ita md:-mt-6 text-noir">contruction</h1>
+        </div>
+        <nav class=" mt-2 hidden lg:block md:block">
+            <ul class="text-noir font-inter  flex md:gap-20  lg:gap-44 md:text-base lg:text-xl font-[500]">
+                <a href="#" class="hover:text-orange-700 hover:border-b-2 border-orange-400 hover:-translate-y-2">
+                    <li>Acceuil</li>
+                </a>
+                <a href="#section8" class="hover:text-orange-700 hover:border-b-2 border-orange-400 hover:-translate-y-2">
+                    <li>A propos</li>
+                </a>
+                <a href="#section7" class="hover:text-orange-700 hover:border-b-2 border-orange-400 hover:-translate-y-2">
+                    <li>Avantages</li>
+                </a>
+            </ul>
+        </nav>
+
+        <a href="#section9"
+            class=" hidden lg:flex md:flex mt-2 md:-mt-2  md:w-32 md:h-14 lg:w-40 lg:h-18 bg-gradient-to-r from-orange-700 to-orange-400 px-[.19rem]   md:justify-center md:items-center rounded-3xl z-1 ">
+            <button
+                class=" bg-white md:w-32 md:h-[50px] lg:w-40 lg:h-13 text-noir rounded-3xl z-2 font-bold hover:-translate-y-0.5 font-inter  md:text-xs lg:text-lg">Contactez-nous</button>
+        </a>
+        <a href="#" class="mt-2 lg:hidden md:hidden"><img src="assets/img/menu.svg" alt=""
+                class=" w-12 h-10 object-cover ">
+        </a>
+       
+
+        </a>
+    </header>
+
+    <!-- section1 -->
+
+    <section class=" relative mt-12 w-full h-64 md:h-80 lg:h-screen bg-no-repeat bg-cover rounded-2xl md:mt-24 lg:mt-32  "
+        style="background-image:url(assets/img/maison.jpeg)">
+        <h1 class="text-xl font-ita font-[900] lg:font-bold w-full md:text-3xl lg:text-5xl text-white  absolute bottom-1 justify-center  flex md:justify-end lg:bottom-8">TR Construction Tôles de qualité et des prix imbattables</h1>
+    </section>
+
+
+    <!-- section2 -->
+    <!-- <div class="flex flex-col mt-16 gap-10   md:mt-24 md:flex-row md:gap-12">
+        <section class="flex flex-col gap-2 md:gap-8 w-full ">
+
+            <h1 class=" flex  gap-2 text-2xl text-noir font-bold  md:text-3xl lg:text-4xl font-inter">Espace Tôle
+
+            </h1>
+            <div
+                class=" bg-blanc flex flex-col  w-full h-44 p-2 md:p-4 lg:p-6 justify-between md:h-64 lg:h-96 rounded-2xl">
+
+                <div class="flex justify-between items-center ">
+                    <a href="#section4"
+                        class="text- bold-semibold text-base md:text-2xl lg:text-3xl font-inter">Tôle bac</a>
+                    <h4 class="text-noir bold-semibold text-xs md:text-xl lg:text-2xl font-inter">disponible</h4>
+                </div>
+
+                <div class="flex justify-between items-center ">
+                    <a href="#section4"
+                        class="text-noir bold-semibold text-base md:text-2xl lg:text-3xl font-inter">Tôle tuile</a>
+                    <h4 class="text-noir bold-semibold text-xs md:text-xl lg:text-2xl font-inter">disponible</h4>
+                </div>
+
+                <div class="flex justify-between items-center ">
+                    <a href="#section4"
+                        class="text-noir bold-semibold text-base md:text-2xl lg:text-3xl font-inter">Tôle ondulée</a>
+                    <h4 class="text-noir bold-semibold text-xs md:text-xl lg:text-2xl font-inter">disponible</h4>
+                </div>
+
+                <div class="flex justify-between items-center ">
+                    <a href="#section4"
+                        class="text-noir bold-semibold text-base md:text-2xl lg:text-3xl font-inter">Tôle métrobonde
+                    </a>
+                    <h4 class="text-noir bold-semibold text-xs md:text-xl lg:text-2xl font-inter">disponible</h4>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="flex flex-col gap-4  w-full   md:gap-8 ">
+            <h1 class=" flex  gap-2 text-2xl text-noir font-bold  md:text-3xl lg:text-4xl font-inter">Espace
+                Accessoire
+
+            </h1>
+            <div
+                class=" bg-blanc flex flex-col  w-full h-44 p-2 md:p-4 lg:p-6 justify-between md:h-64 lg:h-96 rounded-2xl">
+
+                <div class="flex justify-between items-center ">
+                    <a href="#section6"
+                        class="text- bold-semibold text-base md:text-2xl lg:text-3xl font-inter">Support
+                        gouttière</a>
+                    <h4 class="text-noir bold-semibold text-xs  md:text-xl gouttière lg:text-2xl font-inter">
+                        disponible</h4>
+                </div>
+
+                <div class="flex justify-between items-center ">
+                    <a href="#section6"
+                        class="text-noir bold-semibold text-base md:text-2xl lg:text-3xl font-inter">Cavalier tôle
+                    </a>
+                    <h4 class="text-noir bold-semibold text-xs md:text-xl gouttière lg:text-2xl font-inter">disponible
+                    </h4>
+                </div>
+
+                <div class="flex justify-between items-center ">
+                    <a href="#section6"
+                        class="text-noir bold-semibold text-base md:text-2xl lg:text-3xl font-inter">Gouttières bande
+                    </a>
+                    <h4 class="text-noir bold-semibold text-xs md:text-xl gouttière lg:text-2xl font-inter">disponible
+                    </h4>
+                </div>
+
+                <div class="flex justify-between items-center ">
+                    <a href="#section6"
+                        class="text-noir bold-semibold text-base md:text-2xl lg:text-3xl font-inter">Retour et
+                        collecteur</h1>
+                        <h4 class="text-noir bold-semibold text-xs md:text-xl gouttière lg:text-2xl font-inter">
+                            disponible
+                    </a>
+                </div>
+
+                <div class="flex justify-between items-center ">
+                    <a href="#section6"
+                        class="text-noir bold-semibold text-base md:text-2xl lg:text-3xl font-inter">Bande ourlée</a>
+                    <h4 class="text-noir bold-semibold text-xs md:text-xl gouttière lg:text-2xl font-inter">disponible
+                    </h4>
+                </div>
+
+
+        </section>
+    </div> -->
+
+
+
+    
+
+
+    <!-- section3 -->
+    <section class="flex flex-col mt-12 gap-12 md:gap-28 ">
+
+        <div class="bg-gradient-to-tr from-  to-blanct to-90% rounded-2xl z-1 p-[.12rem]  h-20 lg:h-28">
+            <div
+                class=" flex justify-center items-center bg-gradient-to-br  from-blanct from-80% to- w-full h-28 md:h-40 lg:h-48 rounded-2xl">
+                <h1
+                    class="h-32 text-noir text-xl lg:text-3xl md:text-2xl font-inter font-[500] flex justify-center items-center">
+                    produit disponible</h1>
+
+            </div>
+        </div>
+        <div class="flex gap-4 justiy-between">
+            <!-- 2 -->
+            <div
+                class="bg-gradient-to-bl from-blanct from-80%  to- to-10%  rounded-2xl z-1 pl-[.12rem] w-full h-28 lg:h-48">
+                <div
+                    class=" flex justify-center items-center bg-gradient-to-tr  from-blanct from-80% to- w-full h-28 md:h-40 lg:h-48 rounded-2xl">
+                    <h1
+                        class="h-32 text-noir text-xl lg:text-3xl md:text-2xl font-inter font-[500] flex justify-center items-center">
+                        nom produit</h1>
+
+                </div>
+            </div>
+            <!-- 3 -->
+            <div
+                class="bg-gradient-to-tr from-  to-blanct to-90% rounded-2xl z-1 p-[.125rem] w-full h-20 lg:h-28">
+                <div
+                    class=" flex justify-center items-center bg-gradient-to-br  from-blanct from-80% to- w-full h-28 md:h-40 lg:h-48 rounded-2xl">
+                    <h1
+                        class="h-32 text-noir text-xl lg:text-3xl md:text-2xl font-inter font-[500] flex justify-center items-center">
+                        prix produit</h1>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="mt-16 md:mt-20 lg:mt-24 flex flex-col gap-6 md:gap-12 lg:gap-14" id="section7">
+        <h1 class=" flex  gap-4 text-2xl text-noir font-bold  md:text-4xl lg:text-5xl font-inter"> Documentation
+            <img src="assets/img/livre2.svg" alt="" class="w-8 h-8 lg:w-12 lg:h-12 object-cover md:w-10 md:h-10">
+        </h1>
+        <!-- 1 -->
+        <div class="flex flex-col md:flex-row  gap-4 lg:gap-16 md:justify-between">
+            <div
+                class=" p-2 w-full h-36 lg:h-44 flex-1  rounded-2xl bg-gradient-to-tr from-blanc from-10% via-orange-100 via-70%  to-blanc to-40%  border border-blanc flex  flex-col gap-1 lg:gap-3">
+                <div class="flex gap-1">
+                    <h1 class="w-6 h-6 mt-1 lg:mt-2 rounded-full bg-gris"></h1>
+                    <h1 class="text-xl lg:text-2xl md:text-base font-inter font-semibold">Tôle bac</h1>
+                </div>
+                <h4 class="w-11/12  md:w-40  md:text-sm  ml-8 lg:w-8/12 lg:text-base"> 0,26 prix 2100 ; 0,30 prix 2400; 0,40 prix 3300 aluzinc; 0,35 prix 2800 ;0,40
+                    prix 4300</h4>
+            </div>
+
+            <!-- 2 -->
+            <div
+                class=" p-2 w-full h-32 lg:h-44  flex-1 rounded-2xl bg-gradient-to-tr from-blanc from-10% via-orange-100 via-70%  to-blanc to-40%  border border-blanc flex  flex-col gap-1 lg:gap-2">
+                <div class="flex gap-2">
+                    <h1 class="w-6 h-6 mt-1 lg:mt-2 rounded-full bg-gris"></h1>
+                    <h1 class="text-xl font-inter  md:text-base lg:text-2xl font-semibold">Tôle tuile&ondulée</h1>
+                </div>
+                <h4 class="w-10/12 md:w-36 md:text-sm ml-8 lg:w-10/12 lg:text-base"> ces toles sont coupées a la dimension du client par metre carré. Ne se delavent pas</h4>
+            </div>
+
+            <!-- 3 -->
+            <div
+                class=" p-2 w-full h-32  flex-1 lg:h-44 rounded-2xl bg-gradient-to-tr from-blanc from-10% via-orange-100 via-70%  to-blanc to-40%  border border-blanc flex  flex-col gap-2 lg:gap-4">
+                <div class="flex gap-2">
+                    <h1 class="w-6 h-6 mt-1 lg:mt-2 rounded-full bg-gris "></h1>
+                    <h1 class="text-xl lg:text-2xl md:text-base font-inter font-semibold">Tôle metrobonde</h1>
+                </div>
+                <h4 class="w-10/12 md:w-36 md:text-sm  ml-8 lg:w-10/12 lg:text-base"> ces toles sont coupées a la dimension du client par metre carré qui revient a 5800f</h4>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- section4 -->
+    <section class="mt-16 md:mt-24 lg:mt-32 flex flex-col gap-6 md:gap-12 lg:gap-14 " id="section4">
+        <h1 class=" flex  gap-2 text-2xl text-noir font-bold  md:text-3xl lg:text-5xl items-center justify-center font-inter"> Tôles disponibles
+            <img src="assets/img/dispo.svg" alt="" class="w-6 h-6 mt-1 md:w-8 md:h-8 object-cover md:w-10 md:h-10 lg:mt-3">
+        </h1>
+        <div class="flex  overflow-x-auto whitespace-nowrap scroll-smooth gap-8 md:gap-20 lg:gap-24 ">
+            <!-- 1 -->
+            <div class="flex w-full flex-1 flex-col">
+                <img src="assets/img/bac.jpeg" alt="" class="w-full h-40 object-cover md:h-52 lg:h-72 rounded-2xl">
+                <h1 class="text-noir bold-semibold text-base md:text-xl lg:text-2xl font-inter w-40 md:w-52 lg:w-72">Tôle bac</h1>
+            </div>
+            <!-- 2 -->
+            <div class="flex  flex-col">
+                <img src="assets/img/tuile.jpeg" alt="" class="w-full h-40 object-cover md:h-52 lg:h-72 rounded-2xl">
+                <h1 class="text-noir bold-semibold text-base md:text-xl lg:text-2xl font-inter w-40 md:w-52 lg:w-72">Tôle tuile</h1>
+            </div>
+            <!-- 3 -->
+            <div class="flex  flex-col">
+                <img src="assets/img/ondule.jpeg" alt="" class="w-full h-40 object-cover md:h-52 lg:h-72 rounded-2xl">
+                <h1 class="text-noir bold-semibold text-base md:text-xl lg:text-2xl font-inter w-40 md:w-52 lg:w-72">Tôle ondulée</h1>
+            </div>
+            <!-- 4 -->
+            <div class="flex  flex-col">
+                <img src="assets/img/metrobonde.jpeg" alt=""
+                    class="w-full h-40 object-cover md:h-52 lg:h-72 rounded-2xl">
+                <h1 class="text-noir bold-semibold text-base md:text-xl lg:text-2xl font-inter w-40 md:w-52 lg:w-72">Tôle metrobonde</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- section5 -->
+    <section class="mt-16 md:mt-20 lg:mt-24 flex flex-col gap-6 md:gap-12  justify-center items-center">
+        <h1 class=" flex  gap-2 text-2xl text-noir font-bold  md:text-3xl lg:text-5xl font-inter">Espace Construction
+            <img src="assets/img/marteau.svg" alt="" class="w-6 h-6 object-cover md:w-10 md:h-10 lg:mt-3">
+        </h1>
+
+        <div class="w-full  h-60 rounded-2xl lg:h-screen bg-no-repeat bg-cover"
+            style="background-image: url(assets/img/home.jpeg);">
+
+        </div>
+
+    </section>
+    <!-- section6 -->
+    <section class="mt-16  md:mt-24 lg:mt-32 flex flex-col gap-6 md:gap-12 lg:gap-14" id="section6">
+        <h1 class=" flex  gap-2 text-2xl text-noir font-bold  items-center justify-center md:text-3xl lg:text-5xl font-inter"> Disponibilité
+            Accessoire
+            <img src="assets/img/dispo.svg" alt="" class="w-6 h-6 md:w-8 md:h-8 mt-1 object-cover md:w-10 md:h-10 lg:mt-3">
+        </h1>
+        
+        <div class="flex  overflow-x-auto whitespace-nowrap scroll-smooth gap-8 lg:gap-24 ">
+            <!-- 1 -->
+            <div class="flex  flex-col  w-full flex-1">
+                <img src="assets/img/support.jpeg" alt="" class="w-full h-28 object-cover md:h-44 lg:h-64 rounded-2xl">
+                <h1 class="text-noir bold-semibold text-sm md:text-xl lg:text-2xl font-inter w-32 md:w-44 lg:w-64">Support gouttière</h1>
+            </div>
+            <!-- 2 -->
+            <div class="flex  flex-col flex-1 w-full">
+                <img src="assets/img/cavalier.jpeg" alt="" class="w-full h-28 object-cover md:h-44 lg:h-64 rounded-2xl">
+                <h1 class="text-noir bold-semibold text-sm md:text-xl  lg:text-2xl font-inter w-32 md:w-44 lg:w-64">Cavalier tôle</h1>
+            </div>
+            <!-- 3 -->
+            <div class="flex  flex-col flex-1 w-full">
+                <img src="assets/img/bande.jpeg" alt="" class="w-full h-28 object-cover md:h-44 lg:h-64 rounded-2xl">
+                <h1 class="text-noir bold-semibold text-sm md:text-xl lg:text-2xl font-inter w-32 md:w-44 lg:w-64">Gouttière bande</h1>
+            </div>
+            <!-- 4 -->
+            <div class="flex  flex-col flex-1 w-full">
+                <img src="assets/img/retour.jpeg" alt="" class="w-full h-28 object-cover md:h-44 lg:h-64 rounded-2xl">
+                <h1 class="text-noir bold-semibold text-sm md:text-xl lg:text-2xl font-inter w-32 md:w-44 lg:w-64">Retour /Collecteur
+                </h1>
+            </div>
+            <!-- 5 -->
+            <div class="flex  flex-col flex-1 w-full">
+                <img src="assets/img/ourle.jpeg" alt="" class="w-full h-28 object-cover md:h-44 lg:h-64 rounded-2xl">
+                <h1 class="text-noir bold-semibold text-sm md:text-xl lg:text-2xl font-inter w-32 md:w-44 lg:w-64">Bande ourlée</h1>
+            </div>
+            <!-- 6 -->
+            <div class="flex  flex-col flex-1 w-full">
+                <img src="assets/img/toiturol.jpeg" alt="" class="w-full h-28 object-cover md:h-44 lg:h-64 rounded-2xl">
+                <h1 class="text-noir bold-semibold text-sm md:text-xl lg:text-2xl font-inter w-32 md:w-44 lg:w-64">Toiturol</h1>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- section7 -->
+    <section class="mt-16 md:mt-20 lg:mt-24 flex flex-col gap-6 md:gap-12 lg:gap-14" id="section8">
+        <h1 class=" flex  gap-4 text-2xl text-noir font-bold lg:w-64 lg:h-18  md:text-4xl lg:text-5xl font-inter"> Avis
+            <img src="assets/img/etoile1.png" alt="" class=" lg:w-64 lg:h-16 lg:object-cover md:w-24 md:-mt-4 w-20 lg:mt-0.5 md:mt-2">
+        </h1>
+        <!-- 1 -->
+        <div class="flex flex-col md:flex-row  gap-4 lg:gap-8 md:justify-between">
+            <div class="bg-gradient-to-tr  from-orange-600  to-blanct to-90% w-full flex-1 rounded-2xl z-1 p-[.12rem]  h-20 lg:h-28">
+                <div
+                    class=" flex p-2 w-full h-32 lg:gap-4  flex-1 lg:h-44 rounded-2xl bg-gradient-to-tr from-blanc from-10% via-orange-100 via-70%  to-blanc to-40%  border border-blanc flex  gap-2">
+                   
+                        <img src="assets/img/femme1.svg" alt="" class="lg:w-32 lg:h-32 w-20 h-20 mt-1 lg:mt-2 rounded-full object-cover">
+                        
+                        <div class="flex flex-col gap-2 flex-1">
+                        <h1 class="text-xl lg:text-xl md:text-base font-inter font-semibold">Diane Mvogo</h1>
+    
+                    <h4 class="w-full md:w-36 md:text-sm   lg:w-full lg:text-[15px]"> Ma maison est comme neuve.Merci Tr construction !!!</h4>
+                    <img src="assets/img/etoile1.png" alt="" class=" lg:w-28 lg:h-8 lg:object-cover md:w-24 md:-mt-4 w-20  -mt-4 ">
+                </div>
+            </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="bg-gradient-to-tr  from-orange-600  to-blanct to-90% w-full flex-1 rounded-2xl z-1 p-[.12rem]  h-20 lg:h-28">
+                <div
+                    class=" flex p-2 w-full h-32 lg:gap-4  flex-1 lg:h-44 rounded-2xl bg-gradient-to-tr from-blanc from-10% via-orange-100 via-70%  to-blanc to-40%  border border-blanc flex  gap-2">
+                   
+                        <img src="assets/img/homme3.svg" alt="" class="lg:w-32 lg:h-32 mt-1 w-20 h-20 lg:mt-2 rounded-full object-cover">
+                        
+                        <div class="flex flex-col gap-2 flex-1">
+                        <h1 class="text-xl lg:text-xl md:text-base font-inter font-semibold">Steve Ngono</h1>
+    
+                    <h4 class="w-full md:w-36 md:text-sm   lg:w-full lg:text-[15px]"> Ces toles ne se delavent pas et garde les eclats .Merci!!</h4>
+                    <img src="assets/img/etoile2.png" alt="" class=" lg:w-28 lg:h-8 lg:object-cover md:w-24 md:-mt-3  w-20  -mt-4 ">
+                </div>
+            </div>
+            </div>
+            <!-- 3 -->
+            <div class="bg-gradient-to-tr  from-orange-600  to-blanct to-90% w-full flex-1 rounded-2xl z-1 p-[.12rem]  h-20 lg:h-28">
+            <div
+                class=" flex p-2 w-full h-32 lg:gap-4  flex-1  lg:h-44 rounded-2xl bg-gradient-to-tr from-blanc from-10% via-orange-100 via-70%  to-blanc to-40%  border border-blanc flex  gap-2">
+               
+                    <img src="assets/img/homme2.svg" alt="" class="lg:w-32 lg:h-32 w-20 h-20 mt-1 lg:mt-2 rounded-full object-cover">
+                    
+                    <div class="flex flex-col gap-2 lg:gap-2 flex-1">
+                    <h1 class="text-xl lg:text-[18px] md:text-base font-inter font-semibold">Patrick Nguele</h1>
+
+                <h4 class="w-full md:w-36 md:text-sm   lg:w-full lg:text-[15px]"> Ces toles sont de tres bonnes qualites avec des bons prix</h4>
+                <img src="assets/img/etoile2.png" alt="" class=" lg:w-28 lg:h-8 lg:object-cover  md:w-24 md:-mt-3  w-20 -mt-4">
+            </div>
+        </div>
+        </div>
+</div>
+    </section>
+
+    <footer class="mt-16 gap-6 flex flex-col items-center bg-gradient-to-tl from-white from-40% via-oran via-80%   to-white 70% flex flex-col  md:justify-between md:p-4 md:justify-center  md:mt-24 lg:mt-36" id="section9">
+        <div class="flex flex-col w-32 items-center -ml-8 md:-ml-10 lg:-ml-12 lg:-mt-10 md:-mt-6 ">
+            <img src="assets/img/logo.png" class="w-12 h-12 lg:w-22 lg:h-22  md:w-20 md:h-20 object-cover">
+            <h1 class="text-2xl md:text-3xl lg:text-4xl  -mt-6  font-[500] font-ita md:-mt-6 text-noir">contruction</h1>
+        </div>
+        <ul class="flex flex-col items-center gap-6 md:flex-row lg:gap-8  md:justify-center ">
+            <a href="#" class="flex gap-1">
+                <img src="assets/img/facebook.svg" alt="" class="w-6 h-6 lg:w-10 lg:h-10 object-cover rounded-full"><li class="text-2xl font-ita  bg-blanc rounded-xl flex justify-center items-center md:text-xl
+                 lg:text-2xl md:w-40 lg:w-52">Moderne Construction</li></a>
+            <a href="#" class="flex gap-1 -ml-4">
+                <img src="assets/img/zap.svg" alt="" class="w-6 h-6 object-cover lg:w-10 lg:h-10 rounded-full"><li class=" text-2xl font-ita bg-blanc rounded-xl flex justify-center items-center  md:text-xl lg:text-2xl md:w-40 lg:w-52">+237 6 58 87 36 48</li></a>
+                <a href="#" class="flex gap-1">
+                    <img src="assets/img/insta.svg" alt="" class="w-6 h-6 object-cover lg:w-10 lg:h-10 rounded-full "><li class="text-2xl font-ita  bg-blanc rounded-xl flex justify-center items-center md:text-xl  lg:text-2xl md:w-40 lg:w-52">Moderne Construction</li></a>
+                    <a href="#" class="flex gap-1">
+                        <img src="assets/img/tiktok.svg" alt="" class="w-6 h-6 object-cover lg:w-10 lg:h-10 rounded-full"><li class="text-2xl font-ita  bg-blanc rounded-xl flex justify-center items-center  md:text-xl  lg:text-2xl md:w-40 lg:w-52">Moderne Construction</li></a>
+                </ul>
+
+    </footer>
+
+</body>
+
+</html>
